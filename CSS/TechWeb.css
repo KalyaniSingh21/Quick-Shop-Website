@@ -18,7 +18,7 @@ a:hover{
   color: purple;
 }
 
-a{
+section .login a{
   color: blue;
   font-family: Tahoma, Geneva, sans-serif;
   font-size: 23px;
@@ -76,4 +76,19 @@ li a:hover {
 <!--  height: 16px;
   width: 300px; -->
 
+}
+
+
+section p {
+  font-style: normal;
+  font-family: Century Gothic, sans-serif;
+  font-size: 12px;
+  top:100px;
+  align-content: center;
+
+}
+
+#topbar{
+  background-color: #FFE0B0;
+  padding: 0px 300px 0px 300px;
 }
