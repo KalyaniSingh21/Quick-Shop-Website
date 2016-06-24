@@ -16,6 +16,7 @@
       <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
 
       <link href="materialize/css/TechWeb.css" type="text/css" rel="stylesheet"/>
+      <link rel="icon" type="image/png" href="materialize/images/QuickPick.png">
 
      <script type="text/javascript">
        $(document).ready(function() {
@@ -23,20 +24,24 @@
           full_width: false,
           });
        });
+
+
     </script>
 
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
 
       <title> Quick Pick </title>
   </head>
 
   <body class="#eceff1 blue-grey lighten-5">
 
-  <section class="container">
+  <section class="container ">
 
 
     <section class= "row #ffb74d orange lighten-2">
       <section class="col s12" >
-        <p class="center-align">
+        <p class="center-align ">
           Wait no more! Get your order with individual service!
           <a href="#"> Click for details.</a>
         </p>
@@ -45,29 +50,107 @@
 
 
 
-    <section role="navigation" class="row container-width ">
+    <section role="navigation" class="row ">
 
      <a href="#" >
         <img class ="col s2" src="materialize/images/QuickPick.png" alt="materialize/images/NotFound.png"
           />
       </a>
 
-      <nav class ="col s6 push-s1 #ffb74d orange lighten-2 bottom ">
-       <section class="nav-wrapper ">
-         <form>
+
+
+         <form class ="col s7 #ffb74d orange lighten-2 bottom ">
            <section class="input-field center">
              <input id="search" type="search" required>
              <label for="search"><i class="material-icons">search</i></label>
              <i class="material-icons">close</i>
            </section>
          </form>
-       </section>
-     </nav>
 
-        <a href="Login.html" class ="col s2 push-s2 bottom " > Login</a>
+      <section class="right-align">
+
+
+        <i class=" small material-icons col s3">shopping_cart</i>
+        <a href="Login.html" class ="col s2 push-s1 right-align" > Login</a>
         <a href="SignUp.html" class ="col s2 push-s1 bottom">Sign Up</a>
+      </section>
+
+      </section>
 
 
+
+    <section >
+      <a class="waves-effect waves-light dropdown-button btn #ffb74d orange lighten-2" href="#"
+        data-activates="dropdown-1"  >Vegetables</a>
+
+      <ul class="dropdown-content" id="dropdown-1">
+        <li><a href="#">Fresh Produce </a></li>
+        <li class="divider"></li>
+        <li><a href="#">Fruits </a></li>
+        <li class="divider"></li>
+        <li><a href="#">Meat Products </a></li>
+        <li class="divider"></li>
+        <li><a href="#">Dairy </a></li>
+
+      </ul>
+
+      <a class="waves-effect waves-light dropdown-button btn #ffb74d orange lighten-2" href="#"
+        data-activates="dropdown-2"  >Gadgets</a>
+
+      <ul class="dropdown-content" id="dropdown-2">
+        <li><a href="#">Mobile  </a></li>
+        <li class="divider"></li>
+        <li><a href="#">Laptop </a></li>
+        <li class="divider"></li>
+        <li><a href="#">Tablet </a></li>
+        <li class="divider"></li>
+        <li><a href="#">Cameras </a></li>
+
+      </ul>
+
+      <a class="waves-effect waves-light dropdown-button btn #ffb74d orange lighten-2" href="#"
+        data-activates="dropdown-3"  >Clothes</a>
+
+      <ul class="dropdown-content" id="dropdown-3">
+        <li><a href="#">Tops </a></li>
+        <li class="divider"></li>
+        <li><a href="#">Bottom </a></li>
+        <li class="divider"></li>
+        <li><a href="#">Dresses </a></li>
+        <li class="divider"></li>
+        <li><a href="#">Scarfes </a></li>
+
+      </ul>
+
+      <a class="waves-effect waves-light dropdown-button btn #ffb74d orange lighten-2" href="#"
+        data-activates="dropdown-4"  >Automobiles</a>
+
+      <ul class="dropdown-content" id="dropdown-4">
+        <li><a href="#">Cars </a></li>
+        <li class="divider"></li>
+        <li><a href="#">Bikes </a></li>
+        <li class="divider"></li>
+        <li><a href="#">Trucks </a></li>
+        <li class="divider"></li>
+        <li><a href="#">Vans </a></li>
+
+      </ul>
+
+    </ul>
+
+    <a class="waves-effect waves-light dropdown-button btn #ffb74d orange lighten-2" href="#"
+      data-activates="dropdown-5"  >Furniture</a>
+
+    <ul class="dropdown-content" id="dropdown-5">
+      <li><a href="#">Chairs</a></li>
+      <li class="divider"></li>
+      <li><a href="#">Tables </a></li>
+      <li class="divider"></li>
+      <li><a href="#">Dining Sets </a></li>
+      <li class="divider"></li>
+      <li><a href="#">Barstools </a></li>
+
+    </ul>
     </section>
 
     <section class="slider">
@@ -103,34 +186,204 @@
 
     </section>
 
+    <section class= "row #ffb74d orange lighten-2">
+      <section class="col s12 " >
+        <h5 class="center-align darken-4 white-text text-lighten-1 html-new">
+        Need to know more about your food purchase?
+      </h5>
+      </section>
+    </section>
 
-<!--
-    <nav>   Vertical Navigation Pane
-      <ul>
-          <li><a href="">Electronics</a></li>
-          <li><a href="">Homes</a></li>
-          <li><a href="">Furniture</a></li>
-          <li><a href="">Cars</a></li>
-          <li><a href="">Appliances</a></li>
-          <li><a href="">Clothing</a></li>
-          <li><a href="">Sports and Fitness</a></li>
-          <li><a href="">Others</a></li>
-      </ul>
-    </nav>
 
-    <section class = "middle">
-      <img src="materialize/images/QuickShopping.png" alt="materialize/images/NotFound.png" />
-   Planning to put some sort of sliding images
-      <img src="QuickPick.png" alt="NotFound.png" id="logo"/>
-      <img src="QuickPick.png" alt="NotFound.png" id="logo"/>
+    <section class="row">
+
+      <section class="card col s5 ">
+        <section class="card-image">
+          <img class="img-responsive" src="materialize/images/vege-2.jpg" alt="materialize/images/NotFound.png" />
+          <p class="card-title darken-4 white-text text-lighten-1 html-new">
+            Where do we grow our produce?
+          </p>
+
+          <section class="card-content">
+            We grow our daily produce in farms of Central and Southern California.
+            We operate only in West coast so as to provide you with fresh produce in little time.
+          </section>
+
+          <section class="card-action">
+            <a href="#">Check for yourself!</a>
+          </section>
+
+        </section>
+
+      </section>
+
+        <section class="card col s5 push-s2 ">
+          <section class="card-image">
+            <img class="img-responsive" src="materialize/images/vege-1.jpg" alt="materialize/images/NotFound.png" />
+            <p class="card-title darken-4 white-text text-lighten-1">
+              How are the vegetables picked?
+            </p>
+
+            <section class="card-content">
+              We handpick the vegetables so that no machinery comes in the way of natural process.
+              We transport the food as soon as we pick it.
+            </section>
+
+            <section class="card-action">
+              <a href="#">Check for yourself!</a>
+            </section>
+
+          </section>
+
+
+      </section>
 
     </section>
 
 
-    <aside class="">    Advertisement Section
-    </aside>
-          (c) 2016 Quick Pick Company Copyright. All Rights Reserved
-    </footer>    ---->
+
+
+  <section class= "row #ffb74d orange lighten-2">
+    <section class="col s12 " >
+      <h5 class="center-align darken-4 white-text text-lighten-1 html-new">
+      How durable and strong is my furniture?
+    </h5>
+    </section>
+  </section>
+
+
+  <section class="row">
+
+    <section class="card col s5 ">
+      <section class="card-image">
+        <img class="img-responsive" src="materialize/images/furniture-2.jpg" alt="materialize/images/NotFound.png" />
+        <p class="card-title darken-4 white-text text-lighten-1 html-new">
+          Where does the wood come from?
+        </p>
+
+        <section class="card-content">
+          We get the best and the strongest wood barks from the forests of Mexico.
+          We are committed to quality.
+        </section>
+
+        <section class="card-action">
+          <a href="#">Check for yourself!</a>
+        </section>
+
+      </section>
+
+    </section>
+
+      <section class="card col s5 push-s2">
+        <section class="card-image">
+          <img class="img-responsive" src="materialize/images/furniture-1.jpg" alt="materialize/images/NotFound.png" />
+          <p class="card-title darken-4 white-text text-lighten-1">
+            Who crafted my furniture?
+          </p>
+
+          <section class="card-content">
+            We hire some of the best crafts-men who hand craft the furniture.
+            Their skills come out to become the best tables and chairs you own.
+          </section>
+
+          <section class="card-action">
+            <a href="#">Check for yourself!</a>
+          </section>
+
+        </section>
+
+
+    </section>
+
+  </section>
+
+  <section class= "row #ffb74d orange lighten-2">
+    <section class="col s12 " >
+      <h5 class="center-align darken-4 white-text text-lighten-1 html-new">
+      This is what our customers have to say!
+    </h5>
+    </section>
+  </section>
+
+
+
+  <ul class="collection">
+    <li class="collection-item avatar" >
+      <img src="materialize/images/people-2.jpg" alt="materialize/images/NotFound.png" class="circle"/>
+      <section class="title">Quick Service</section>
+      <p >
+        I ordered fruits and perishable vegetable and I got them in 20 minutes<br>
+        Really liked how quick they are.
+      </p>
+    </li>
+
+
+    <li class="collection-item avatar" >
+
+      <img src="materialize/images/people-1.jpg" alt="materialize/images/NotFound.png" class="circle"/>
+      <section class="title">Safely delivered!</section>
+      <p >
+        My dining table and kitchen slabs were carefully and safely delivered.<br>
+        Keep up the good work!
+
+      </p>
+    </li>
+
+    <li class="collection-item avatar" >
+      <img src="materialize/images/people-3.jpg" alt="materialize/images/NotFound.png" class="circle"/>
+      <section class="title">Expert Advice</section>
+      <p >
+      I am not a gadget junkie. I was not sure about what exact phone should I buy<br>
+        They have an expert on site to chat with and assist with the best tech product.
+      </p>
+    </li>
+  </ul>
+
+   <footer class="page-footer row #ffb74d orange lighten-2">
+
+     <section class=" col s4">
+       <h5 class="darken-4 white-text text-lighten-1"> About us</h5>
+       <p class="darken-4 white-text text-lighten-1">
+         We are a consumer to consumer e-commerce company providing basic facilities
+         to customers in West Coast. We offer refurbished and new products with great care.
+       </p>
+
+     </section>
+
+     <section class=" col s4">
+       <h5 class="darken-4 white-text text-lighten-1"> Contact us</h5>
+       <p class="darken-4 white-text text-lighten-1">
+         Email your queries and inquiries.<br>
+         <a href="mailto:quickpick_inquiries@quickpick.com?subject=Feedback">Email us</a>
+       </p>
+
+     </section>
+
+     <section class="col s4">
+                <h5 class="white-text darken-4 white-text text-lighten-1">Follow us</h5>
+                <ul class="center-align vertical-align top-level">
+                  <li><iframe src="https://www.facebook.com/plugins/follow.php?href=https%3A%2F%2Fwww.facebook.com%2Fkanu.atoz&width=70&height=200&layout=button&show_faces=false&appId"
+                    width="80" height="65" style="border:none;overflow:hidden"
+                    scrolling="no" frameborder="0" allowTransparency="true"></iframe></li>
+                   <li><a href="https://twitter.com/share" class="twitter-share-button" data-url="https://twitter.com/TwitterDev" data-size="large">Tweet</a>
+                     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],
+                       p=/^http:/.test(d.location)?'http':'https';
+                       if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';
+                       fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+                     </script> </li>
+
+                </ul>
+     </section>
+
+     <section class="footer-copyright col s12 center-align">
+       <p class="black-text darken-4 ">
+          Copyright @ Quick Pick 2016.  All Rights Reserved.
+       </p>
+
+     </section>
+
+
+  </footer>
 
   </section>
   </body>
