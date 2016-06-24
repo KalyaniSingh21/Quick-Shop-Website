@@ -92,3 +92,11 @@ section p {
   background-color: #FFE0B0;
   padding: 0px 300px 0px 300px;
 }
+
+#horizontal{
+  display: inline;
+}
+
+.bottom{
+  vertical-align: bottom;
+}

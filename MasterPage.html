@@ -5,44 +5,107 @@
       <meta charset="utf-8">
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+      <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+
       <!--Import Google Icon Font-->
-      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
       <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+
+      <link href="materialize/css/TechWeb.css" type="text/css" rel="stylesheet"/>
+
+     <script type="text/javascript">
+       $(document).ready(function() {
+       $('.slider').slider({
+          full_width: false,
+          });
+       });
+    </script>
 
 
-
-      <title>
-        Quick Pick
-      </title>
-
-      <link href="CSS/TechWeb.css" type="text/css" rel="stylesheet"   >
+      <title> Quick Pick </title>
   </head>
 
-  <body>
-    <!--Import jQuery before materialize.js-->
-      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
+  <body class="#eceff1 blue-grey lighten-5">
 
-    <section id="topbar">
-      <p>
+  <section class="container">
+
+
+    <section class= "row #ffb74d orange lighten-2">
+      <section class="col s12" >
+        <p class="center-align">
           Wait no more! Get your order with individual service!
           <a href="#"> Click for details.</a>
-      </p>
-    </section>
-    <header> <!---- Logo and Company Name -->
-      <img src="QuickPick.png" alt="NotFound.png" id="logo"/>
-
-      <h1 class="headline"> Quick Pick </h1>
-
-      <section id="login" > <!---- Top Right Login Section -->
-        <a href="Login.html" class ="space" >Login</a>
-        <a href="SignUp.html"  >Sign Up</a>
+        </p>
       </section>
+    </section>
 
-    </header>
 
-    <nav>  <!---- Vertical Navigation Pane -->
+
+    <section role="navigation" class="row container-width ">
+
+     <a href="#" >
+        <img class ="col s2" src="materialize/images/QuickPick.png" alt="materialize/images/NotFound.png"
+          />
+      </a>
+
+      <nav class ="col s6 push-s1 #ffb74d orange lighten-2 bottom ">
+       <section class="nav-wrapper ">
+         <form>
+           <section class="input-field center">
+             <input id="search" type="search" required>
+             <label for="search"><i class="material-icons">search</i></label>
+             <i class="material-icons">close</i>
+           </section>
+         </form>
+       </section>
+     </nav>
+
+        <a href="Login.html" class ="col s2 push-s2 bottom " > Login</a>
+        <a href="SignUp.html" class ="col s2 push-s1 bottom">Sign Up</a>
+
+
+    </section>
+
+    <section class="slider">
+      <ul class="slides">
+       <li>
+          <img class="img-responsive"
+                src="materialize/images/vegetables.jpg" alt="materialize/images/NotFound.png" />
+          <section class="caption right-align">
+            <h3 class="light grey-text text-lighten-3 #616161 grey darken-2 center-align">Get fresh vegetable from our daily produce!</h3>
+            <h5 class="light grey-text text-lighten-3 #616161 grey darken-2 center-align">Delivered without delays!</h5>
+          </section>
+        </li>
+
+        <li>
+          <img class="img-responsive" src="materialize/images/gadgets.jpg" alt="materialize/images/NotFound.png" />
+          <section class="caption left-align">
+            <h3 class="light grey-text text-lighten-3 #616161 grey darken-2 center-align">Shop from a mix of gadgets!</h3>
+            <h5 class="light grey-text text-lighten-3 #616161 grey darken-2 center-align">Shipped with safety covers!</h5>
+          </section>
+
+        </li>
+
+        <li>
+          <img class="img-responsive" src="materialize/images/clothes.jpg" alt="materialize/images/NotFound.png" />
+          <section class="caption center-align">
+            <h3 class="light grey-text text-lighten-3 #616161 grey darken-2 center-align">Grab the latest styles!</h3>
+            <h5 class="light grey-text text-lighten-3 #616161 grey darken-2 center-align">Prices starting from $10</h5>
+          </section>
+
+        </li>
+
+      </ul>
+
+    </section>
+
+
+<!--
+    <nav>   Vertical Navigation Pane
       <ul>
           <li><a href="">Electronics</a></li>
           <li><a href="">Homes</a></li>
@@ -56,20 +119,19 @@
     </nav>
 
     <section class = "middle">
-      <img src="QuickShopping.png" alt="NotFound.png" />
-  <!---- Planning to put some sort of sliding images
+      <img src="materialize/images/QuickShopping.png" alt="materialize/images/NotFound.png" />
+   Planning to put some sort of sliding images
       <img src="QuickPick.png" alt="NotFound.png" id="logo"/>
-      <img src="QuickPick.png" alt="NotFound.png" id="logo"/>   --->
+      <img src="QuickPick.png" alt="NotFound.png" id="logo"/>
 
     </section>
 
 
-    <aside class="">    <!---- Advertisement Section -->
+    <aside class="">    Advertisement Section
     </aside>
+          (c) 2016 Quick Pick Company Copyright. All Rights Reserved
+    </footer>    ---->
 
-    <footer>    <!---- Basic footer showing copyrights -->
-      (c) 2016 Quick Pick Company Copyright. All Rights Reserved
-    </footer>
-
+  </section>
   </body>
 </html>
