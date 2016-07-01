@@ -97,6 +97,11 @@ section p {
   display: inline;
 }
 
+
 .bottom{
   vertical-align: bottom;
+  margin-bottom: 0px;
+  position: relative;
+ top:-5px;
+
 }

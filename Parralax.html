@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+      <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+
+      <link href="materialize/css/TechWeb.css" type="text/css" rel="stylesheet"/>
+
+      <link rel="icon" type="image/png" href="materialize/images/QuickPick.png">
+
+      <script type="text/javascript">
+
+        $(document).ready(function(){
+            $('.parallax').parallax();
+            });
+
+      </script>
+
+      <script type="text/javascript">
+
+      var options = [
+  {selector: '#section-1', offset: 50, callback: function() {
+    Materialize.toast("Keep scrolling!", 1500 ,'rounded');
+  } },
+
+  {selector: '#section-3', offset: 400, callback: function() {
+
+    Materialize.toast("Please continue scrolling!", 1500,'rounded' )
+  } },
+];
+Materialize.scrollFire(options);
+
+      </script>
+
+
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+      <title> Furniture</title>
+  </head>
+
+  <body class="#eceff1 blue-grey lighten-5">
+
+
+    <section class= "row #ffb74d orange lighten-2">
+      <section class="col s10" >
+        <h3 class="left-align ">
+        Furniture <br><br></h3>
+
+        <h5>
+          'Every block of stone has a statue inside it and it is the task of the sculptor to discover it.'' <br>
+          -Michaelangelo
+        </h5>
+
+      </section>
+
+
+
+      <section class="col s2 center-align">
+
+        <a href="#!" class="btn waves-effect #e65100 orange darken-4"
+        onclick="Materialize.showStaggeredList('#staggered-test')">Explore</a>
+        <ul id="staggered-test" class="staggered-list">
+          <li>
+            <a href="#"><h5>Chairs</h5></a>
+          </li>
+          <li class="divider"></li>
+          <li>
+            <a href="#"><h5>Tables</h5></a>
+          </li>
+          <li class="divider"></li>
+          <li><a href="#"><h5> Barstools </h5></a></li>
+          <li class="divider"></li>
+          <li><a href="#"><h5>Sofa-sets </h5></a></li>
+        </ul>
+      </section>
+    </section>
+
+
+    <section class="parallax-container" id="section-1">
+
+      <section class="parallax">
+        <img src="materialize/images/parallax-1.jpg" alt="materialize/images/NotFound.png" />
+      </section>
+    </section>
+
+      <section class="section white" id="section-2">
+        <section class="container row">
+          <h2 class="header"> From chairs to sofa-sets!</h2>
+           <p class="grey-text text-darken-3 lighten-3"> Search through our wide range of furnitures! <br>
+          We have modern tables and chairs designed with space management.<br>
+             These modern design are one the best in the market. <br>
+             They are the value for your money.<br>
+             And Yes, they can be customized!<br>
+             Order one for yourself right now! <br>
+           </p>
+
+        </section>
+
+      </section>
+
+      <section class="parallax-container" id="section-3">
+
+        <section class="parallax">
+          <img src="materialize/images/parallax-2.jpg" alt="materialize/images/NotFound.png" />
+        </section>
+      </section>
+
+      <footer class="page-footer row #ffb74d orange lighten-2" id="fadein">
+
+        <section class=" col s4">
+          <h5 class="darken-4 white-text text-lighten-1"> About us</h5>
+          <p class="darken-4 white-text text-lighten-1">
+            We are a consumer to consumer e-commerce company providing basic facilities
+            to customers in West Coast. We offer refurbished and new products with great care.
+          </p>
+
+        </section>
+
+        <section class=" col s4">
+          <h5 class="darken-4 white-text text-lighten-1"> Contact us</h5>
+          <p class="darken-4 white-text text-lighten-1">
+            Email your queries and inquiries.<br>
+            <a href="mailto:quickpick_inquiries@quickpick.com?subject=Feedback">Email us</a>
+          </p>
+
+        </section>
+
+        <section class="col s4">
+                   <h5 class="white-text darken-4 white-text text-lighten-1">Follow us</h5>
+                   <ul class="center-align vertical-align top-level">
+                     <li><iframe src="https://www.facebook.com/plugins/follow.php?href=https%3A%2F%2Fwww.facebook.com%2Fkanu.atoz&width=70&height=200&layout=button&show_faces=false&appId"
+                       width="80" height="65" style="border:none;overflow:hidden"
+                       scrolling="no" frameborder="0" allowTransparency="true"></iframe></li>
+                      <li><a href="https://twitter.com/share" class="twitter-share-button" data-url="https://twitter.com/TwitterDev" data-size="large">Tweet</a>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],
+                          p=/^http:/.test(d.location)?'http':'https';
+                          if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';
+                          fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+                        </script> </li>
+
+                   </ul>
+        </section>
+
+        <section class="footer-copyright col s12 center-align">
+          <p class="black-text darken-4 ">
+             Copyright @ Quick Pick 2016.  All Rights Reserved.
+          </p>
+
+        </section>
+
+
+     </footer>
+
+
+
+
+
+  </body>
+
+
+
+</html>
