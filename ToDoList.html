@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <link rel="icon" type="image/png" href="materialize/images/To-Do_List.png">
+    <title>To Do List</title>
+
+</head>
+<body class="container">
+  <script type="text/javascript">
+
+  $(document).ready(function () {
+    var value =  $('button').click(function () {
+          $('#todo').append("<ul>" + $("input[name=task]").val() + "  "+ $("input[name=priority]").val()+
+          " <a href='#' class='close' aria-hidden='true'> &times; </a></ul>");
+      });
+      $("body").on('click', '#todo a', function () {
+          $(this).closest("ul").remove();
+      });
+  });
+
+    </script>
+
+<section class="container-fluid jumbotron text-center">
+
+                 <h2>
+                   Welcome, <small> start creating a <mark>To Do List</mark> and keep yourself organized!</small>
+                 </h2>
+
+
+               <button type="button" class="btn btn-info btn-lg" data-toggle="modal"
+               data-target="#listmodal" title="New List">
+                     Create a New List
+               </button>
+
+
+               <section class="modal fade" id="listmodal" role="dialog">
+                 <section class="modal-dialog ">
+                <section class="modal-content">
+
+                   <section class="modal-header">
+                     <button type="button" name="button" class="close" data-dismiss="modal">
+                       <p class="text-center">
+                         <script>
+                            document.write(Date());
+                         </script>
+                       </p>
+                    </button>
+
+                   </section>
+
+                   <section class="modal-body">
+
+                  <table class="table">
+                       <thead>
+                       <tr>
+                          <th>
+                            <span class="text-left"> Groceries</span>
+                          </th>
+                          <th>
+                            <span class="text-right"> Priority </span>
+                          </th>
+                       </tr>
+                       </thead>
+                       <tr>
+                         <th>
+                           <input type="text" name="task" placeholder="Enter your task" />
+                         </th>
+                         <th>
+                           <input type="number" name="priority" placeholder="Enter priority" />
+                         </th>
+                       </tr>
+
+                     </table>
+
+                     <ul class="list" id="todo"></ul>
+
+                   </section>
+
+                   <section class="modal-footer">
+                     <button type="button" class="btn btn-info btn-lg"  > Add</button>
+                   </section>
+
+                 </section>
+            </section>
+        </section>
+    </section>
+
+</body>
+</html>
